@@ -1,0 +1,101 @@
+$ ./test1.sh
+Script [./test1.sh] start 2023-08-14,17:36:28 nds121/Linux
+openjdk version "1.8.0_372"
+OpenJDK Runtime Environment (IcedTea 3.27.0) (build 1.8.0_372-b07 suse-27.87.1-x86_64)
+OpenJDK 64-Bit Server VM (build 25.372-b07, mixed mode)
++ java -Xmx4000M -cp x4master.jar trans2master -i:EXFOR-2023-04-29.bck -n3set:20230515 -t:trans.c222 -h:REQUEST,1001,20230515,172831,20230515,3 -o:EXFOR-2023-05-15.new
+        +-------------------------------------------+
+        |  Update EXFOR Master file by TRANS files. |
+        |    Program trans2master, ver.2023-08-14   |
+        |      by V.Zerkin, IAEA, Vienna, 2023      |
+        +-------------------------------------------+
+  args[0]=[-i:EXFOR-2023-04-29.bck]
+        #Option: -i:EXFOR-2023-04-29.bck
+---readMasterFile----input file:[EXFOR-2023-04-29.bck]
+---openInputFile---firstStrFile=[REQUEST           1001   20230429     182948   20230429          3]
+#25790) --readNextEntry--[ENTRY            V1002   20220907   20230118   20230118       V041] #ln:10741 #Sub:722 t:17.161s
+---readMasterFile---fileName----:[EXFOR-2023-04-29.bck]
+---readMasterFile---firstStrFile=[REQUEST           1001   20230429     182948   20230429          3]
+---readMasterFile---lastStrFile==[ENDREQUEST       25790]
+---readMasterFile::time:17.162sec lnMax:1189916
+  args[1]=[-n3set:20230515]
+        #Option: -n3set:20230515
+  args[2]=[-t:trans.c222]
+        #Option: -t:trans.c222
+---trans2master---x4transName:[trans.c222]
+
+---applyTransFile---input file:[trans.c222]
+---openInputFile---firstStrFile=[TRANS             C222   20230513                                 C0000  0    0 ]
+#1)     --readNextEntry--[ENTRY            C0457   20220625   20230515   20230513       C222] #ln:768 t:0.004s
+    updateEntry:[C0457] N2=20220625 nSub:old=11/upd=11/new=11
+#2)     --readNextEntry--[ENTRY            C0542   20220625   20230515   20230513       C222] #ln:703 t:0.005s
+    updateEntry:[C0542] N2=20220625 nSub:old=3/upd=3/new=3
+#3)     --readNextEntry--[ENTRY            C0626   20220625   20230515   20230513       C222] #ln:513 t:0.006s
+    updateEntry:[C0626] N2=20220625 nSub:old=5/upd=9/new=9
+#4)     --readNextEntry--[ENTRY            C0719   20220625   20230515   20230513       C222] #ln:617 t:2.695s
+    updateEntry:[C0719] N2=20220625 nSub:old=25/upd=26/new=26
+#5)     --readNextEntry--[ENTRY            C0733   20220625   20230515   20230513       C222] #ln:2219 t:2.698s
+    updateEntry:[C0733] N2=20220625 nSub:old=8/upd=8/new=8
+#6)     --readNextEntry--[ENTRY            C0742   20220625   20230515   20230513       C222] #ln:300 t:2.698s
+    updateEntry:[C0742] N2=20220625 nSub:old=4/upd=5/new=5
+#7)     --readNextEntry--[ENTRY            C0743   20220625   20230515   20230513       C222] #ln:1049 t:2.7s
+    updateEntry:[C0743] N2=20220625 nSub:old=5/upd=5/new=5
+#8)     --readNextEntry--[ENTRY            C0749   20220625   20230515   20230513       C222] #ln:570 t:2.7s
+    updateEntry:[C0749] N2=20220625 nSub:old=4/upd=4/new=4
+#9)     --readNextEntry--[ENTRY            C0750   20220625   20230515   20230513       C222] #ln:678 t:2.701s
+    updateEntry:[C0750] N2=20220625 nSub:old=3/upd=4/new=4
+#10)    --readNextEntry--[ENTRY            C2560   20220629   20230515   20230513       C222] #ln:34 t:2.701s
+    updateEntry:[C2560] N2=20220629 nSub:old=4/upd=2/new=4
+---closeInputFile--firstStrFile=[TRANS             C222   20230513                                 C0000  0    0 ]
+---closeInputFile---lastStrFile=[ENDTRANS            10          0                                 Z999999999999 ]
+---applyTransFile::time:2.701sec lnMax:2219
+  args[3]=[-h:REQUEST,1001,20230515,172831,20230515,3]
+        #Option: -h:REQUEST,1001,20230515,172831,20230515,3
+0) [REQUEST]
+1) [1001]
+2) [20230515]
+3) [172831]
+4) [20230515]
+5) [3]
+  args[4]=[-o:EXFOR-2023-05-15.new]
+        #Option: -o:EXFOR-2023-05-15.new
+
+---outMasterFile---output file:[EXFOR-2023-05-15.new]
+---MasterEntry::25790
+0/25790: 10001---MasterEntry::#sub:17
+2000/25790: 12001---MasterEntry::#sub:3
+4000/25790: 14001---MasterEntry::#sub:2
+6000/25790: 21333---MasterEntry::#sub:8
+8000/25790: 23366---MasterEntry::#sub:3
+10000/25790: 32763---MasterEntry::#sub:4
+12000/25790: A0017---MasterEntry::#sub:4
+14000/25790: C0488---MasterEntry::#sub:115
+16000/25790: C2579---MasterEntry::#sub:3
+18000/25790: D6202---MasterEntry::#sub:5
+20000/25790: F0436---MasterEntry::#sub:2
+22000/25790: M0374---MasterEntry::#sub:8
+24000/25790: O1394---MasterEntry::#sub:3
+---outTail::str:[ENDREQUEST       25790]22
+
+===trans2master===time:53.975sec
++ errCode=0
++ '[' 0 -ne 0 ']'
++ ls -la EXFOR-2023-05-15.bck EXFOR-2023-05-15.new
+-rw-r--r-- 1 zerkinv users 1020547502 May 15 17:32 EXFOR-2023-05-15.bck
+-rw-r--r-- 1 zerkinv users  994997523 Sep  7  2022 EXFOR-2023-05-15.new
++ unix2dos EXFOR-2023-05-15.new
+unix2dos: converting file EXFOR-2023-05-15.new to DOS format ...
++ ls -la EXFOR-2023-05-15.bck EXFOR-2023-05-15.new
+-rw-r--r-- 1 zerkinv users 1020547502 May 15 17:32 EXFOR-2023-05-15.bck
+-rw-r--r-- 1 zerkinv users 1020547502 Aug 14 17:37 EXFOR-2023-05-15.new
++ wc -l EXFOR-2023-05-15.bck EXFOR-2023-05-15.new
+  25549979 EXFOR-2023-05-15.bck
+  25549979 EXFOR-2023-05-15.new
+  51099958 total
++ diff EXFOR-2023-05-15.bck EXFOR-2023-05-15.new
++ '[' 0 -ne 0 ']'
++ set +x
+Different lines: 0 dif1.txt
+Script [./test1.sh] stop. 2023-08-14,17:37:44
+Elapsed time: 76sec
+$

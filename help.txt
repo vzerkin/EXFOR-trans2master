@@ -1,0 +1,51 @@
+	+-------------------------------------------+
+	|  Update EXFOR Master file by TRANS files. |
+	|    Program trans2master, ver.2023-08-15   |
+	|      by V.Zerkin, IAEA, Vienna, 2023      |
+	+-------------------------------------------+
+
+ Purpose.
+   To be used for standalone maintenance of EXFOR Master file
+   implementing procedure of EXFOR Master file updates:
+   - read EXFOR file (Backup/Master or any other) into buffer;
+   - read TRANS file(s) and updates Entries in the buffer;
+   - save content of buffer to new EXFOR Master file.
+
+ Run:
+   $ java [flags] trans2master [option|command] {[option|command]} ...
+ options:
+    settings applied to input files:
+   -add19	   add 19 (when missing) to N2 for ENTRY/SUBENT
+   -n3set:N3       set N3 in ENTRY/SUBENT: date of update
+   -n3clean        correct N3 removing extra symbols
+    settings for output:
+   -order          add N3=0 to END* lines, to be compatible with ORDER
+   -wide           add to EXFOR file right column (default: cut after 66-col.)
+   -h:N0,N1,..,N5  set Header-line in output file
+ commands:
+    input:
+   -i:filename     read initial EXFOR Master file into buffer
+   -t:filename     read EXFOR TRANS file, update buffer
+    output:
+   -o:filename     write buffer to new EXFOR Master file
+   -od:dir         write buffer to dir/1/123/ by one file.x4 for one ENTRY
+    input-output without buffer:
+   -split:file:dir split EXFOR file by Entries and save in dir/1/123/12345.x4
+
+ Examples:
+  1) load Master file, update by Trans-file(s), write new Master file
+   $ java -Xmx4000M -cp x4master.jar trans2master \
+     -i:EXFOR-2023-04-29.bck                      \
+     -n3set:20230515 -t:trans.c222                \
+     -h:REQUEST,1001,20230515,172831,20230515,3   \
+     -o:EXFOR-2023-05-15.new
+
+  2) merge EXFOR files, write to new EXFOR file
+   $ java -cp x4master.jar trans2master -t:trans.3208 -t:trans.e137 -o:new.x4
+
+  3) merge EXFOR files, save Entry files to output sub-directories
+   $ java -cp x4master.jar trans2master -t:trans.3208 -t:trans.e137 -wide -od:X4all/
+
+  4) split EXFOR file into sub-directories
+   $ java -cp x4master.jar trans2master -split:trans.3208:x4all
+

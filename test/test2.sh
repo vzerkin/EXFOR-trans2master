@@ -1,12 +1,32 @@
 #!/bin/bash
 
-#To run this test, you must have in the current directory:
-#	EXFOR-2023-05-15.bck
-#	trans.2313, trans.2314, trans.o093, trans.o094
-#	EXFOR-2023-05-23.bck
+user="$USER"
+if [ "$user" = "" ] ; then user="${USERNAME}" ; fi
+if [ "$user" = "" ] ; then user="${LOGNAME}"  ; fi
+if [ "$user" = "" ] ; then user="`id -u -n`"  ; fi
 
-echo "Script [$0] start `date +%F,%T` `uname -n`/`uname -s`"
+echo "Script [$0] start `date +%F,%T` on:`uname -n`/`uname -s` user:$user"
 java -version
+
+chkFile() {
+    if [ -f $1 ]; then 
+	echo "---checking file existance [$1]: OK."
+    else
+	echo -e "\n___ERROR: file not found: [$1]"
+	exit
+    fi
+}
+chkFiles() {
+    for file1 in $@; do
+	chkFile $file1
+    done
+}
+
+#To run this test you must have files in the current directory:
+chkFiles EXFOR-2023-05-15.bck
+chkFiles trans.2313 trans.2314 trans.o093 trans.o094
+chkFiles EXFOR-2023-05-23.bck
+
 t00=`date +%s`
 set -x
 
@@ -18,8 +38,8 @@ java -Xmx4000M -cp x4master.jar trans2master \
  -h:REQUEST,644,20230523,142148,20230523,3 \
  -o:EXFOR-2023-05-23.new
 errCode=$?
+set +x
 if [ $errCode -ne 0 ]; then 
-  set +x
   echo "------Error=$errCode";
   echo "Please, check your java version.";
   java -version

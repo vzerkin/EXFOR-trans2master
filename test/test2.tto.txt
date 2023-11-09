@@ -1,9 +1,15 @@
-C:\zerkin\x4master\x4NextMaster2win>bash test2.sh
-Script [test2.sh] start 2023-08-14,17:37:02 PC510421/MINGW32_NT-6.2
+C:\projects\zerkin\x4NextMaster2>bash test2.sh
+Script [test2.sh] start 2023-11-09,14:21:09 on:MINI-PC1-ZERKIN/MINGW32_NT-6.2 user:zerkin
 java version "13.0.2" 2020-01-14
 Java(TM) SE Runtime Environment (build 13.0.2+8)
 Java HotSpot(TM) 64-Bit Server VM (build 13.0.2+8, mixed mode, sharing)
-+ java -cp x4master.jar trans2master -add19 -n3clean -i:EXFOR-2023-05-15.bck -n3set:20230523 -t:trans.2313 -t:trans.2314 -t:trans.o093 -t:trans.o094 -h:REQUEST,644,20230523,142148,20230523,3 -o:EXFOR-2023-05-23.new
+---checking file existance [EXFOR-2023-05-15.bck]: OK.
+---checking file existance [trans.2313]: OK.
+---checking file existance [trans.2314]: OK.
+---checking file existance [trans.o093]: OK.
+---checking file existance [trans.o094]: OK.
+---checking file existance [EXFOR-2023-05-23.bck]: OK.
++ java -Xmx4000M -cp x4master.jar trans2master -add19 -n3clean -i:EXFOR-2023-05-15.bck -n3set:20230523 -t:trans.2313 -t:trans.2314 -t:trans.o093 -t:trans.o094 -h:REQUEST,644,20230523,142148,20230523,3 -o:EXFOR-2023-05-23.new
         +-------------------------------------------+
         |  Update EXFOR Master file by TRANS files. |
         |    Program trans2master, ver.2023-08-14   |
@@ -17,11 +23,11 @@ Java HotSpot(TM) 64-Bit Server VM (build 13.0.2+8, mixed mode, sharing)
         #Option: -i:EXFOR-2023-05-15.bck
 ---readMasterFile----input file:[EXFOR-2023-05-15.bck]
 ---openInputFile---firstStrFile=[REQUEST           1001   20230515     172831   20230515          3]
-#25790) --readNextEntry--[ENTRY            V1002   20220907   20230118   20230118       V041] #ln:10741 #Sub:722 t:9.592s
+#25790) --readNextEntry--[ENTRY            V1002   20220907   20230118   20230118       V041] #ln:10741 #Sub:722 t:8.598s
 ---readMasterFile---fileName----:[EXFOR-2023-05-15.bck]
 ---readMasterFile---firstStrFile=[REQUEST           1001   20230515     172831   20230515          3]
 ---readMasterFile---lastStrFile==[ENDREQUEST       25790]
----readMasterFile::time:9.594sec lnMax:1189916
+---readMasterFile::time:8.614sec lnMax:1189916
   args[3]=[-n3set:20230523]
         #Option: -n3set:20230523
   args[4]=[-t:trans.2313]
@@ -32,89 +38,89 @@ Java HotSpot(TM) 64-Bit Server VM (build 13.0.2+8, mixed mode, sharing)
 ---openInputFile---firstStrFile=[TRANS             2313   20230523                                 20000  0    0 ]
 #1)     --readNextEntry--[ENTRY            20036   20230129   20230523   20230523       2313] #ln:470 t:0.0s
     updateEntry:[20036] N2=20230129 nSub:old=21/upd=7/new=21
-#2)     --readNextEntry--[ENTRY            20164   20230129   20230523   20230523       2313] #ln:1028 t:0.008s
+#2)     --readNextEntry--[ENTRY            20164   20230129   20230523   20230523       2313] #ln:1028 t:0.015s
     updateEntry:[20164] N2=20230129 nSub:old=60/upd=45/new=60
-#3)     --readNextEntry--[ENTRY            20195   20230130   20230523   20230523       2313] #ln:85 t:0.008s
+#3)     --readNextEntry--[ENTRY            20195   20230130   20230523   20230523       2313] #ln:85 t:0.031s
     updateEntry:[20195] N2=20230130 nSub:old=22/upd=3/new=22
-#4)     --readNextEntry--[ENTRY            20229   20230130   20230523   20230523       2313] #ln:119 t:0.008s
+#4)     --readNextEntry--[ENTRY            20229   20230130   20230523   20230523       2313] #ln:119 t:0.031s
     updateEntry:[20229] N2=20230130 nSub:old=6/upd=6/new=6
-#5)     --readNextEntry--[ENTRY            20257   20230130   20230523   20230523       2313] #ln:107 t:0.008s
+#5)     --readNextEntry--[ENTRY            20257   20230130   20230523   20230523       2313] #ln:107 t:0.031s
     updateEntry:[20257] N2=20230130 nSub:old=5/upd=5/new=5
-#6)     --readNextEntry--[ENTRY            20303   20230130   20230523   20230523       2313] #ln:284 t:0.008s
+#6)     --readNextEntry--[ENTRY            20303   20230130   20230523   20230523       2313] #ln:284 t:0.031s
     updateEntry:[20303] N2=20230130 nSub:old=12/upd=12/new=12
-#7)     --readNextEntry--[ENTRY            20338   20230131   20230523   20230523       2313] #ln:97 t:0.008s
+#7)     --readNextEntry--[ENTRY            20338   20230131   20230523   20230523       2313] #ln:97 t:0.031s
     updateEntry:[20338] N2=20230131 nSub:old=15/upd=2/new=15
-#8)     --readNextEntry--[ENTRY            20346   20230130   20230523   20230523       2313] #ln:725 t:0.008s
+#8)     --readNextEntry--[ENTRY            20346   20230130   20230523   20230523       2313] #ln:725 t:0.046s
     updateEntry:[20346] N2=20230130 nSub:old=27/upd=27/new=27
-#9)     --readNextEntry--[ENTRY            20416   20230201   20230523   20230523       2313] #ln:191 t:0.008s
+#9)     --readNextEntry--[ENTRY            20416   20230201   20230523   20230523       2313] #ln:191 t:0.046s
     updateEntry:[20416] N2=20230201 nSub:old=123/upd=1/new=123
-#10)    --readNextEntry--[ENTRY            20540   20230201   20230523   20230523       2313] #ln:66 t:0.018s
+#10)    --readNextEntry--[ENTRY            20540   20230201   20230523   20230523       2313] #ln:66 t:0.046s
     updateEntry:[20540] N2=20230201 nSub:old=26/upd=2/new=26
-#11)    --readNextEntry--[ENTRY            20550   20230130   20230523   20230523       2313] #ln:99 t:0.018s
+#11)    --readNextEntry--[ENTRY            20550   20230130   20230523   20230523       2313] #ln:99 t:0.046s
     updateEntry:[20550] N2=20230130 nSub:old=3/upd=3/new=3
-#12)    --readNextEntry--[ENTRY            20625   20230201   20230523   20230523       2313] #ln:161 t:0.02s
+#12)    --readNextEntry--[ENTRY            20625   20230201   20230523   20230523       2313] #ln:161 t:0.046s
     updateEntry:[20625] N2=20230201 nSub:old=43/upd=3/new=43
-#13)    --readNextEntry--[ENTRY            20633   20230130   20230523   20230523       2313] #ln:172 t:0.023s
+#13)    --readNextEntry--[ENTRY            20633   20230130   20230523   20230523       2313] #ln:172 t:0.046s
     updateEntry:[20633] N2=20230130 nSub:old=7/upd=7/new=7
-#14)    --readNextEntry--[ENTRY            20643   20230201   20230523   20230523       2313] #ln:87 t:0.028s
+#14)    --readNextEntry--[ENTRY            20643   20230201   20230523   20230523       2313] #ln:87 t:0.062s
     updateEntry:[20643] N2=20230201 nSub:old=61/upd=2/new=61
-#15)    --readNextEntry--[ENTRY            20649   20230130   20230523   20230523       2313] #ln:130 t:0.042s
+#15)    --readNextEntry--[ENTRY            20649   20230130   20230523   20230523       2313] #ln:130 t:0.062s
     updateEntry:[20649] N2=20230130 nSub:old=7/upd=7/new=7
-#16)    --readNextEntry--[ENTRY            20650   20230201   20230523   20230523       2313] #ln:42 t:0.056s
+#16)    --readNextEntry--[ENTRY            20650   20230201   20230523   20230523       2313] #ln:42 t:0.062s
     updateEntry:[20650] N2=20230201 nSub:old=2/upd=2/new=2
-#17)    --readNextEntry--[ENTRY            20693   20230201   20230523   20230523       2313] #ln:119 t:0.072s
+#17)    --readNextEntry--[ENTRY            20693   20230201   20230523   20230523       2313] #ln:119 t:0.062s
     updateEntry:[20693] N2=20230201 nSub:old=22/upd=3/new=22
-#18)    --readNextEntry--[ENTRY            20761   20230202   20230523   20230523       2313] #ln:314 t:0.09s
+#18)    --readNextEntry--[ENTRY            20761   20230202   20230523   20230523       2313] #ln:314 t:0.062s
     updateEntry:[20761] N2=20230202 nSub:old=11/upd=11/new=11
-#19)    --readNextEntry--[ENTRY            20776   20230202   20230523   20230523       2313] #ln:81 t:0.106s
+#19)    --readNextEntry--[ENTRY            20776   20230202   20230523   20230523       2313] #ln:81 t:0.062s
     updateEntry:[20776] N2=20230202 nSub:old=3/upd=3/new=3
-#20)    --readNextEntry--[ENTRY            20792   20230202   20230523   20230523       2313] #ln:62 t:0.106s
+#20)    --readNextEntry--[ENTRY            20792   20230202   20230523   20230523       2313] #ln:62 t:0.062s
     updateEntry:[20792] N2=20230202 nSub:old=3/upd=2/new=3
-#21)    --readNextEntry--[ENTRY            20806   20230130   20230523   20230523       2313] #ln:346 t:0.123s
+#21)    --readNextEntry--[ENTRY            20806   20230130   20230523   20230523       2313] #ln:346 t:0.078s
     updateEntry:[20806] N2=20230130 nSub:old=16/upd=16/new=16
-#22)    --readNextEntry--[ENTRY            20836   20230203   20230523   20230523       2313] #ln:87 t:0.142s
+#22)    --readNextEntry--[ENTRY            20836   20230203   20230523   20230523       2313] #ln:87 t:0.078s
     updateEntry:[20836] N2=20230203 nSub:old=28/upd=2/new=28
-#23)    --readNextEntry--[ENTRY            20922   20230203   20230523   20230523       2313] #ln:132 t:0.156s
+#23)    --readNextEntry--[ENTRY            20922   20230203   20230523   20230523       2313] #ln:132 t:0.078s
     updateEntry:[20922] N2=20230203 nSub:old=10/upd=2/new=10
-#24)    --readNextEntry--[ENTRY            21019   20230205   20230523   20230523       2313] #ln:270 t:0.161s
+#24)    --readNextEntry--[ENTRY            21019   20230205   20230523   20230523       2313] #ln:270 t:0.078s
     updateEntry:[21019] N2=20230205 nSub:old=27/upd=8/new=28
-#25)    --readNextEntry--[ENTRY            21086   20230130   20230523   20230523       2313] #ln:161 t:0.163s
+#25)    --readNextEntry--[ENTRY            21086   20230130   20230523   20230523       2313] #ln:161 t:0.078s
     updateEntry:[21086] N2=20230130 nSub:old=4/upd=4/new=4
-#26)    --readNextEntry--[ENTRY            21193   20230130   20230523   20230523       2313] #ln:207 t:0.163s
+#26)    --readNextEntry--[ENTRY            21193   20230130   20230523   20230523       2313] #ln:207 t:0.078s
     updateEntry:[21193] N2=20230130 nSub:old=7/upd=7/new=7
-#27)    --readNextEntry--[ENTRY            21300   20230130   20230523   20230523       2313] #ln:368 t:0.163s
+#27)    --readNextEntry--[ENTRY            21300   20230130   20230523   20230523       2313] #ln:368 t:0.093s
     updateEntry:[21300] N2=20230130 nSub:old=25/upd=25/new=25
-#28)    --readNextEntry--[ENTRY            21304   20230130   20230523   20230523       2313] #ln:464 t:0.163s
+#28)    --readNextEntry--[ENTRY            21304   20230130   20230523   20230523       2313] #ln:464 t:0.093s
     updateEntry:[21304] N2=20230130 nSub:old=32/upd=32/new=32
-#29)    --readNextEntry--[ENTRY            21503   20230207   20230523   20230523       2313] #ln:59 t:0.163s
+#29)    --readNextEntry--[ENTRY            21503   20230207   20230523   20230523       2313] #ln:59 t:0.093s
     updateEntry:[21503] N2=20230207 nSub:old=12/upd=2/new=12
-#30)    --readNextEntry--[ENTRY            21515   20230207   20230523   20230523       2313] #ln:185 t:0.163s
+#30)    --readNextEntry--[ENTRY            21515   20230207   20230523   20230523       2313] #ln:185 t:0.093s
     updateEntry:[21515] N2=20230207 nSub:old=7/upd=7/new=7
-#31)    --readNextEntry--[ENTRY            21546   20230207   20230523   20230523       2313] #ln:190 t:0.163s
+#31)    --readNextEntry--[ENTRY            21546   20230207   20230523   20230523       2313] #ln:190 t:0.093s
     updateEntry:[21546] N2=20230207 nSub:old=3/upd=3/new=5
-#32)    --readNextEntry--[ENTRY            21564   20230130   20230523   20230523       2313] #ln:250 t:0.171s
+#32)    --readNextEntry--[ENTRY            21564   20230130   20230523   20230523       2313] #ln:250 t:0.093s
     updateEntry:[21564] N2=20230130 nSub:old=11/upd=11/new=11
-#33)    --readNextEntry--[ENTRY            21725   20230130   20230523   20230523       2313] #ln:303 t:0.173s
+#33)    --readNextEntry--[ENTRY            21725   20230130   20230523   20230523       2313] #ln:303 t:0.093s
     updateEntry:[21725] N2=20230130 nSub:old=7/upd=7/new=7
-#34)    --readNextEntry--[ENTRY            21847   20230130   20230523   20230523       2313] #ln:164 t:0.173s
+#34)    --readNextEntry--[ENTRY            21847   20230130   20230523   20230523       2313] #ln:164 t:0.093s
     updateEntry:[21847] N2=20230130 nSub:old=4/upd=4/new=4
-#35)    --readNextEntry--[ENTRY            21858   20230208   20230523   20230523       2313] #ln:247 t:0.181s
+#35)    --readNextEntry--[ENTRY            21858   20230208   20230523   20230523       2313] #ln:247 t:0.109s
     updateEntry:[21858] N2=20230208 nSub:old=10/upd=10/new=10
-#36)    --readNextEntry--[ENTRY            21891   20230208   20230523   20230523       2313] #ln:94 t:0.183s
+#36)    --readNextEntry--[ENTRY            21891   20230208   20230523   20230523       2313] #ln:94 t:0.109s
     updateEntry:[21891] N2=20230208 nSub:old=3/upd=3/new=3
-#37)    --readNextEntry--[ENTRY            21976   20230208   20230523   20230523       2313] #ln:105 t:0.183s
+#37)    --readNextEntry--[ENTRY            21976   20230208   20230523   20230523       2313] #ln:105 t:0.109s
     updateEntry:[21976] N2=20230208 nSub:old=49/upd=2/new=49
-#38)    --readNextEntry--[ENTRY            22029   20230209   20230523   20230523       2313] #ln:210 t:0.183s
+#38)    --readNextEntry--[ENTRY            22029   20230209   20230523   20230523       2313] #ln:210 t:0.109s
     updateEntry:[22029] N2=20230209 nSub:old=13/upd=5/new=13
-#39)    --readNextEntry--[ENTRY            22038   20230130   20230523   20230523       2313] #ln:180 t:0.183s
+#39)    --readNextEntry--[ENTRY            22038   20230130   20230523   20230523       2313] #ln:180 t:0.109s
     updateEntry:[22038] N2=20230130 nSub:old=7/upd=7/new=7
-#40)    --readNextEntry--[ENTRY            23411   20230121   20230523   20230523       2313] #ln:62 t:0.183s
+#40)    --readNextEntry--[ENTRY            23411   20230121   20230523   20230523       2313] #ln:62 t:0.109s
     updateEntry:[23411] N2=20230121 nSub:old=3/upd=1/new=3
-#41)    --readNextEntry--[ENTRY            23776   20230121   20230523   20230523       2313] #ln:48 t:0.183s
+#41)    --readNextEntry--[ENTRY            23776   20230121   20230523   20230523       2313] #ln:48 t:0.109s
     updateEntry:[23776] N2=20230121 nSub:old=5/upd=1/new=5
 ---closeInputFile--firstStrFile=[TRANS             2313   20230523                                 20000  0    0 ]
 ---closeInputFile---lastStrFile=[ENDTRANS            41          0                                 Z999999999999 ]
----applyTransFile::time:0.191sec lnMax:1028
+---applyTransFile::time:0.125sec lnMax:1028
   args[5]=[-t:trans.2314]
         #Option: -t:trans.2314
 ---trans2master---x4transName:[trans.2314]
@@ -123,81 +129,81 @@ Java HotSpot(TM) 64-Bit Server VM (build 13.0.2+8, mixed mode, sharing)
 ---openInputFile---firstStrFile=[TRANS             2314   20230504                                 20000  0    0 ]
 #1)     --readNextEntry--[ENTRY            20172   20230215   20230523   20230504       2314] #ln:147 t:0.0s
     updateEntry:[20172] N2=20230215 nSub:old=6/upd=6/new=6
-#2)     --readNextEntry--[ENTRY            20177   20230215   20230523   20230504       2314] #ln:229 t:0.01s
+#2)     --readNextEntry--[ENTRY            20177   20230215   20230523   20230504       2314] #ln:229 t:0.0s
     updateEntry:[20177] N2=20230215 nSub:old=2/upd=2/new=2
-#3)     --readNextEntry--[ENTRY            20192   20230202   20230523   20230504       2314] #ln:291 t:0.01s
+#3)     --readNextEntry--[ENTRY            20192   20230202   20230523   20230504       2314] #ln:291 t:0.015s
     updateEntry:[20192] N2=20230202 nSub:old=5/upd=5/new=5
-#4)     --readNextEntry--[ENTRY            21155   20230206   20230523   20230504       2314] #ln:501 t:0.012s
+#4)     --readNextEntry--[ENTRY            21155   20230206   20230523   20230504       2314] #ln:501 t:0.015s
     updateEntry:[21155] N2=20230206 nSub:old=11/upd=11/new=11
-#5)     --readNextEntry--[ENTRY            21493   20230213   20230523   20230504       2314] #ln:48 t:0.012s
+#5)     --readNextEntry--[ENTRY            21493   20230213   20230523   20230504       2314] #ln:48 t:0.015s
     updateEntry:[21493] N2=20230213 nSub:old=7/upd=1/new=7
-#6)     --readNextEntry--[ENTRY            21568   20230212   20230523   20230504       2314] #ln:224 t:0.012s
+#6)     --readNextEntry--[ENTRY            21568   20230212   20230523   20230504       2314] #ln:224 t:0.015s
     updateEntry:[21568] N2=20230212 nSub:old=6/upd=3/new=6
-#7)     --readNextEntry--[ENTRY            21627   20230211   20230523   20230504       2314] #ln:97 t:0.016s
+#7)     --readNextEntry--[ENTRY            21627   20230211   20230523   20230504       2314] #ln:97 t:0.015s
     updateEntry:[21627] N2=20230211 nSub:old=9/upd=9/new=9
-#8)     --readNextEntry--[ENTRY            21698   20230209   20230523   20230504       2314] #ln:270 t:0.022s
+#8)     --readNextEntry--[ENTRY            21698   20230209   20230523   20230504       2314] #ln:270 t:0.015s
     updateEntry:[21698] N2=20230209 nSub:old=5/upd=5/new=5
-#9)     --readNextEntry--[ENTRY            21717   20230211   20230523   20230504       2314] #ln:126 t:0.022s
+#9)     --readNextEntry--[ENTRY            21717   20230211   20230523   20230504       2314] #ln:126 t:0.015s
     updateEntry:[21717] N2=20230211 nSub:old=3/upd=3/new=3
-#10)    --readNextEntry--[ENTRY            21722   20230211   20230523   20230504       2314] #ln:115 t:0.022s
+#10)    --readNextEntry--[ENTRY            21722   20230211   20230523   20230504       2314] #ln:115 t:0.031s
     updateEntry:[21722] N2=20230211 nSub:old=45/upd=3/new=45
-#11)    --readNextEntry--[ENTRY            21965   20230209   20230523   20230504       2314] #ln:136 t:0.022s
+#11)    --readNextEntry--[ENTRY            21965   20230209   20230523   20230504       2314] #ln:136 t:0.031s
     updateEntry:[21965] N2=20230209 nSub:old=6/upd=2/new=6
-#12)    --readNextEntry--[ENTRY            22064   20230209   20230523   20230504       2314] #ln:182 t:0.022s
+#12)    --readNextEntry--[ENTRY            22064   20230209   20230523   20230504       2314] #ln:182 t:0.031s
     updateEntry:[22064] N2=20230209 nSub:old=3/upd=4/new=4
-#13)    --readNextEntry--[ENTRY            22136   20230211   20230523   20230504       2314] #ln:282 t:0.022s
+#13)    --readNextEntry--[ENTRY            22136   20230211   20230523   20230504       2314] #ln:282 t:0.031s
     updateEntry:[22136] N2=20230211 nSub:old=26/upd=7/new=26
-#14)    --readNextEntry--[ENTRY            22155   20230211   20230523   20230504       2314] #ln:125 t:0.03s
+#14)    --readNextEntry--[ENTRY            22155   20230211   20230523   20230504       2314] #ln:125 t:0.031s
     updateEntry:[22155] N2=20230211 nSub:old=100/upd=3/new=100
-#15)    --readNextEntry--[ENTRY            22234   20230212   20230523   20230504       2314] #ln:191 t:0.033s
+#15)    --readNextEntry--[ENTRY            22234   20230212   20230523   20230504       2314] #ln:191 t:0.031s
     updateEntry:[22234] N2=20230212 nSub:old=7/upd=7/new=7
-#16)    --readNextEntry--[ENTRY            22278   20230211   20230523   20230504       2314] #ln:152 t:0.033s
+#16)    --readNextEntry--[ENTRY            22278   20230211   20230523   20230504       2314] #ln:152 t:0.031s
     updateEntry:[22278] N2=20230211 nSub:old=11/upd=3/new=11
-#17)    --readNextEntry--[ENTRY            22346   20230211   20230523   20230504       2314] #ln:175 t:0.04s
+#17)    --readNextEntry--[ENTRY            22346   20230211   20230523   20230504       2314] #ln:175 t:0.031s
     updateEntry:[22346] N2=20230211 nSub:old=9/upd=9/new=9
-#18)    --readNextEntry--[ENTRY            22511   20230130   20230523   20230504       2314] #ln:31 t:0.042s
+#18)    --readNextEntry--[ENTRY            22511   20230130   20230523   20230504       2314] #ln:31 t:0.031s
     updateEntry:[22511] N2=20230130 nSub:old=2/upd=2/new=2
-#19)    --readNextEntry--[ENTRY            22637   20230213   20230523   20230504       2314] #ln:138 t:0.042s
+#19)    --readNextEntry--[ENTRY            22637   20230213   20230523   20230504       2314] #ln:138 t:0.046s
     updateEntry:[22637] N2=20230213 nSub:old=90/upd=2/new=90
-#20)    --readNextEntry--[ENTRY            22766   20230213   20230523   20230504       2314] #ln:98 t:0.042s
+#20)    --readNextEntry--[ENTRY            22766   20230213   20230523   20230504       2314] #ln:98 t:0.046s
     updateEntry:[22766] N2=20230213 nSub:old=36/upd=2/new=36
-#21)    --readNextEntry--[ENTRY            22781   20230213   20230523   20230504       2314] #ln:69 t:0.042s
+#21)    --readNextEntry--[ENTRY            22781   20230213   20230523   20230504       2314] #ln:69 t:0.046s
     updateEntry:[22781] N2=20230213 nSub:old=6/upd=2/new=6
-#22)    --readNextEntry--[ENTRY            22869   20230213   20230523   20230504       2314] #ln:63 t:0.042s
+#22)    --readNextEntry--[ENTRY            22869   20230213   20230523   20230504       2314] #ln:63 t:0.046s
     updateEntry:[22869] N2=20230213 nSub:old=6/upd=1/new=6
-#23)    --readNextEntry--[ENTRY            23017   20230213   20230523   20230504       2314] #ln:46 t:0.049s
+#23)    --readNextEntry--[ENTRY            23017   20230213   20230523   20230504       2314] #ln:46 t:0.046s
     updateEntry:[23017] N2=20230213 nSub:old=6/upd=2/new=6
-#24)    --readNextEntry--[ENTRY            23032   20230213   20230523   20230504       2314] #ln:167 t:0.051s
+#24)    --readNextEntry--[ENTRY            23032   20230213   20230523   20230504       2314] #ln:167 t:0.046s
     updateEntry:[23032] N2=20230213 nSub:old=15/upd=2/new=15
-#25)    --readNextEntry--[ENTRY            23046   20230212   20230523   20230504       2314] #ln:82 t:0.051s
+#25)    --readNextEntry--[ENTRY            23046   20230212   20230523   20230504       2314] #ln:82 t:0.046s
     updateEntry:[23046] N2=20230212 nSub:old=5/upd=2/new=5
-#26)    --readNextEntry--[ENTRY            23092   20230212   20230523   20230504       2314] #ln:109 t:0.051s
+#26)    --readNextEntry--[ENTRY            23092   20230212   20230523   20230504       2314] #ln:109 t:0.062s
     updateEntry:[23092] N2=20230212 nSub:old=9/upd=2/new=9
-#27)    --readNextEntry--[ENTRY            23107   20230212   20230523   20230504       2314] #ln:178 t:0.051s
+#27)    --readNextEntry--[ENTRY            23107   20230212   20230523   20230504       2314] #ln:178 t:0.062s
     updateEntry:[23107] N2=20230212 nSub:old=8/upd=4/new=8
-#28)    --readNextEntry--[ENTRY            23213   20230218   20230523   20230504       2314] #ln:77 t:0.06s
+#28)    --readNextEntry--[ENTRY            23213   20230218   20230523   20230504       2314] #ln:77 t:0.062s
     updateEntry:[23213] N2=20230218 nSub:old=33/upd=1/new=33
-#29)    --readNextEntry--[ENTRY            23260   20230212   20230523   20230504       2314] #ln:186 t:0.06s
+#29)    --readNextEntry--[ENTRY            23260   20230212   20230523   20230504       2314] #ln:186 t:0.062s
     updateEntry:[23260] N2=20230212 nSub:old=144/upd=3/new=144
 #30)    --readNextEntry--[ENTRY            23266   20230215   20230523   20230504       2314] #ln:2665 t:0.062s
     updateEntry:[23266] N2=20230215 nSub:old=162/upd=80/new=162
-#31)    --readNextEntry--[ENTRY            23292   20230212   20230523   20230504       2314] #ln:20718 t:0.072s
+#31)    --readNextEntry--[ENTRY            23292   20230212   20230523   20230504       2314] #ln:20718 t:0.078s
     updateEntry:[23292] N2=20230212 nSub:old=52/upd=51/new=52
-#32)    --readNextEntry--[ENTRY            23346   20230212   20230523   20230504       2314] #ln:2246 t:0.072s
+#32)    --readNextEntry--[ENTRY            23346   20230212   20230523   20230504       2314] #ln:2246 t:0.078s
     updateEntry:[23346] N2=20230212 nSub:old=37/upd=27/new=37
-#33)    --readNextEntry--[ENTRY            23392   20230212   20230523   20230504       2314] #ln:88 t:0.08s
+#33)    --readNextEntry--[ENTRY            23392   20230212   20230523   20230504       2314] #ln:88 t:0.078s
     updateEntry:[23392] N2=20230212 nSub:old=16/upd=2/new=16
-#34)    --readNextEntry--[ENTRY            23461   20230212   20230523   20230504       2314] #ln:617 t:0.08s
+#34)    --readNextEntry--[ENTRY            23461   20230212   20230523   20230504       2314] #ln:617 t:0.078s
     updateEntry:[23461] N2=20230212 nSub:old=16/upd=3/new=16
-#35)    --readNextEntry--[ENTRY            23467   20230212   20230523   20230504       2314] #ln:48 t:0.082s
+#35)    --readNextEntry--[ENTRY            23467   20230212   20230523   20230504       2314] #ln:48 t:0.078s
     updateEntry:[23467] N2=20230212 nSub:old=7/upd=2/new=7
-#36)    --readNextEntry--[ENTRY            23584   20230212   20230523   20230504       2314] #ln:39 t:0.082s
+#36)    --readNextEntry--[ENTRY            23584   20230212   20230523   20230504       2314] #ln:39 t:0.093s
     updateEntry:[23584] N2=20230212 nSub:old=2/upd=1/new=2
-#37)    --readNextEntry--[ENTRY            23764   20230212   20230523   20230504       2314] #ln:1308 t:0.09s
+#37)    --readNextEntry--[ENTRY            23764   20230212   20230523   20230504       2314] #ln:1308 t:0.093s
     updateEntry:[23764] N2=20230212 nSub:old=5/upd=11/new=11
-#38)    --readNextEntry--[ENTRY            23802   20230212   20230523   20230504       2314] #ln:25 t:0.09s
+#38)    --readNextEntry--[ENTRY            23802   20230212   20230523   20230504       2314] #ln:25 t:0.093s
     updateEntry:[23802] N2=20230212 nSub:old=2/upd=1/new=2
-#39)    --readNextEntry--[ENTRY            23810   20230212   20230523   20230504       2314] #ln:53 t:0.09s
+#39)    --readNextEntry--[ENTRY            23810   20230212   20230523   20230504       2314] #ln:53 t:0.093s
     updateEntry:[23810] N2=20230212 nSub:old=4/upd=2/new=4
 #40)    --readNextEntry--[ENTRY            23814   20230212   20230523   20230504       2314] #ln:99 t:0.093s
     updateEntry:[23814] N2=20230212 nSub:old=6/upd=2/new=6
@@ -212,98 +218,98 @@ Java HotSpot(TM) 64-Bit Server VM (build 13.0.2+8, mixed mode, sharing)
 ---openInputFile---firstStrFile=[TRANS             O093   20230523                                 O0000  0    0 ]
 #1)     --readNextEntry--[ENTRY            O0243   20230125   20230523   20230523       O093] #ln:26 t:0.0s
     updateEntry:[O0243] N2=20230125 nSub:old=3/upd=1/new=3
-#2)     --readNextEntry--[ENTRY            O0305   20221114   20230523   20230523       O093] #ln:174 t:0.01s
+#2)     --readNextEntry--[ENTRY            O0305   20221114   20230523   20230523       O093] #ln:174 t:0.0s
     updateEntry:[O0305] N2=20221114 nSub:old=11/upd=10/new=11
-#3)     --readNextEntry--[ENTRY            O0316   20221225   20230523   20230523       O093] #ln:442 t:0.01s
+#3)     --readNextEntry--[ENTRY            O0316   20221225   20230523   20230523       O093] #ln:442 t:0.016s
     updateEntry:[O0316] N2=20221225 nSub:old=2/upd=10/new=10
-#4)     --readNextEntry--[ENTRY            O0557   20221108   20230523   20230523       O093] #ln:163 t:0.01s
+#4)     --readNextEntry--[ENTRY            O0557   20221108   20230523   20230523       O093] #ln:163 t:0.016s
     updateEntry:[O0557] N2=20221108 nSub:old=0/upd=11/new=11
-#5)     --readNextEntry--[ENTRY            O0689   20230122   20230523   20230523       O093] #ln:98 t:0.01s
+#5)     --readNextEntry--[ENTRY            O0689   20230122   20230523   20230523       O093] #ln:98 t:0.016s
     updateEntry:[O0689] N2=20230122 nSub:old=20/upd=2/new=20
-#6)     --readNextEntry--[ENTRY            O0692   20221224   20230523   20230523       O093] #ln:118 t:0.01s
+#6)     --readNextEntry--[ENTRY            O0692   20221224   20230523   20230523       O093] #ln:118 t:0.016s
     updateEntry:[O0692] N2=20221224 nSub:old=0/upd=3/new=3
-#7)     --readNextEntry--[ENTRY            O0693   20230111   20230523   20230523       O093] #ln:122 t:0.018s
+#7)     --readNextEntry--[ENTRY            O0693   20230111   20230523   20230523       O093] #ln:122 t:0.016s
     updateEntry:[O0693] N2=20230111 nSub:old=0/upd=3/new=3
-#8)     --readNextEntry--[ENTRY            O0702   20230118   20230523   20230523       O093] #ln:66 t:0.018s
+#8)     --readNextEntry--[ENTRY            O0702   20230118   20230523   20230523       O093] #ln:66 t:0.016s
     updateEntry:[O0702] N2=20230118 nSub:old=0/upd=2/new=2
-#9)     --readNextEntry--[ENTRY            O0703   20230121   20230523   20230523       O093] #ln:475 t:0.02s
+#9)     --readNextEntry--[ENTRY            O0703   20230121   20230523   20230523       O093] #ln:475 t:0.016s
     updateEntry:[O0703] N2=20230121 nSub:old=0/upd=16/new=16
-#10)    --readNextEntry--[ENTRY            O0714   20230128   20230523   20230523       O093] #ln:510 t:0.02s
+#10)    --readNextEntry--[ENTRY            O0714   20230128   20230523   20230523       O093] #ln:510 t:0.016s
     updateEntry:[O0714] N2=20230128 nSub:old=0/upd=5/new=5
-#11)    --readNextEntry--[ENTRY            O0920   20230121   20230523   20230523       O093] #ln:545 t:0.022s
+#11)    --readNextEntry--[ENTRY            O0920   20230121   20230523   20230523       O093] #ln:545 t:0.016s
     updateEntry:[O0920] N2=20230121 nSub:old=41/upd=16/new=41
-#12)    --readNextEntry--[ENTRY            O0988   20230123   20230523   20230523       O093] #ln:1359 t:0.03s
+#12)    --readNextEntry--[ENTRY            O0988   20230123   20230523   20230523       O093] #ln:1359 t:0.032s
     updateEntry:[O0988] N2=20230123 nSub:old=79/upd=66/new=79
-#13)    --readNextEntry--[ENTRY            O1099   20230128   20230523   20230523       O093] #ln:131 t:0.03s
+#13)    --readNextEntry--[ENTRY            O1099   20230128   20230523   20230523       O093] #ln:131 t:0.032s
     updateEntry:[O1099] N2=20230128 nSub:old=282/upd=2/new=282
-#14)    --readNextEntry--[ENTRY            O1100   20230124   20230523   20230523       O093] #ln:323 t:0.03s
+#14)    --readNextEntry--[ENTRY            O1100   20230124   20230523   20230523       O093] #ln:323 t:0.032s
     updateEntry:[O1100] N2=20230124 nSub:old=20/upd=15/new=20
-#15)    --readNextEntry--[ENTRY            O1294   20230110   20230523   20230523       O093] #ln:237 t:0.03s
+#15)    --readNextEntry--[ENTRY            O1294   20230110   20230523   20230523       O093] #ln:237 t:0.032s
     updateEntry:[O1294] N2=20230110 nSub:old=2/upd=4/new=4
-#16)    --readNextEntry--[ENTRY            O1420   20230126   20230523   20230523       O093] #ln:67 t:0.03s
+#16)    --readNextEntry--[ENTRY            O1420   20230126   20230523   20230523       O093] #ln:67 t:0.032s
     updateEntry:[O1420] N2=20230126 nSub:old=10/upd=1/new=10
-#17)    --readNextEntry--[ENTRY            O1441   20230124   20230523   20230523       O093] #ln:104 t:0.04s
+#17)    --readNextEntry--[ENTRY            O1441   20230124   20230523   20230523       O093] #ln:104 t:0.032s
     updateEntry:[O1441] N2=20230124 nSub:old=2/upd=1/new=2
-#18)    --readNextEntry--[ENTRY            O1589   20230109   20230523   20230523       O093] #ln:63 t:0.04s
+#18)    --readNextEntry--[ENTRY            O1589   20230109   20230523   20230523       O093] #ln:63 t:0.032s
     updateEntry:[O1589] N2=20230109 nSub:old=3/upd=1/new=3
-#19)    --readNextEntry--[ENTRY            O2015   20230121   20230523   20230523       O093] #ln:51 t:0.04s
+#19)    --readNextEntry--[ENTRY            O2015   20230121   20230523   20230523       O093] #ln:51 t:0.047s
     updateEntry:[O2015] N2=20230121 nSub:old=31/upd=2/new=31
-#20)    --readNextEntry--[ENTRY            O2192   20230119   20230523   20230523       O093] #ln:308 t:0.04s
+#20)    --readNextEntry--[ENTRY            O2192   20230119   20230523   20230523       O093] #ln:308 t:0.047s
     updateEntry:[O2192] N2=20230119 nSub:old=5/upd=5/new=5
-#21)    --readNextEntry--[ENTRY            O2209   20221229   20230523   20230523       O093] #ln:446 t:0.048s
+#21)    --readNextEntry--[ENTRY            O2209   20221229   20230523   20230523       O093] #ln:446 t:0.047s
     updateEntry:[O2209] N2=20221229 nSub:old=7/upd=8/new=8
-#22)    --readNextEntry--[ENTRY            O2262   20230128   20230523   20230523       O093] #ln:36 t:0.048s
+#22)    --readNextEntry--[ENTRY            O2262   20230128   20230523   20230523       O093] #ln:36 t:0.047s
     updateEntry:[O2262] N2=20230128 nSub:old=11/upd=1/new=11
-#23)    --readNextEntry--[ENTRY            O2330   20230126   20230523   20230523       O093] #ln:29 t:0.05s
+#23)    --readNextEntry--[ENTRY            O2330   20230126   20230523   20230523       O093] #ln:29 t:0.047s
     updateEntry:[O2330] N2=20230126 nSub:old=6/upd=1/new=6
-#24)    --readNextEntry--[ENTRY            O2337   20230117   20230523   20230523       O093] #ln:54 t:0.05s
+#24)    --readNextEntry--[ENTRY            O2337   20230117   20230523   20230523       O093] #ln:54 t:0.063s
     updateEntry:[O2337] N2=20230117 nSub:old=5/upd=1/new=5
-#25)    --readNextEntry--[ENTRY            O2400   20230120   20230523   20230523       O093] #ln:54 t:0.05s
+#25)    --readNextEntry--[ENTRY            O2400   20230120   20230523   20230523       O093] #ln:54 t:0.063s
     updateEntry:[O2400] N2=20230120 nSub:old=6/upd=1/new=6
-#26)    --readNextEntry--[ENTRY            O2404   20230114   20230523   20230523       O093] #ln:65 t:0.05s
+#26)    --readNextEntry--[ENTRY            O2404   20230114   20230523   20230523       O093] #ln:65 t:0.063s
     updateEntry:[O2404] N2=20230114 nSub:old=5/upd=1/new=5
-#27)    --readNextEntry--[ENTRY            O2408   20230117   20230523   20230523       O093] #ln:64 t:0.05s
+#27)    --readNextEntry--[ENTRY            O2408   20230117   20230523   20230523       O093] #ln:64 t:0.063s
     updateEntry:[O2408] N2=20230117 nSub:old=85/upd=1/new=85
-#28)    --readNextEntry--[ENTRY            O2429   20230117   20230523   20230523       O093] #ln:42 t:0.056s
+#28)    --readNextEntry--[ENTRY            O2429   20230117   20230523   20230523       O093] #ln:42 t:0.063s
     updateEntry:[O2429] N2=20230117 nSub:old=13/upd=1/new=13
 ---closeInputFile--firstStrFile=[TRANS             O093   20230523                                 O0000  0    0 ]
 ---closeInputFile---lastStrFile=[ENDTRANS            28          0                                 Z999999999999 ]
----applyTransFile::time:0.06sec lnMax:1359
+---applyTransFile::time:0.063sec lnMax:1359
   args[7]=[-t:trans.o094]
         #Option: -t:trans.o094
 ---trans2master---x4transName:[trans.o094]
 
 ---applyTransFile---input file:[trans.o094]
 ---openInputFile---firstStrFile=[TRANS             O094   20230417                                 O0000  0    0 ]
-#1)     --readNextEntry--[ENTRY            O2532   20220218   20230523   20230417       O094] #ln:202 t:0.008s
+#1)     --readNextEntry--[ENTRY            O2532   20220218   20230523   20230417       O094] #ln:202 t:0.0s
     updateEntry:[O2532] N2=20220218 nSub:old=0/upd=3/new=3
-#2)     --readNextEntry--[ENTRY            O2551   20230201   20230523   20230417       O094] #ln:638 t:0.008s
+#2)     --readNextEntry--[ENTRY            O2551   20230201   20230523   20230417       O094] #ln:638 t:0.0s
     updateEntry:[O2551] N2=20230201 nSub:old=0/upd=2/new=2
-#3)     --readNextEntry--[ENTRY            O2552   20230201   20230523   20230417       O094] #ln:62 t:0.01s
+#3)     --readNextEntry--[ENTRY            O2552   20230201   20230523   20230417       O094] #ln:62 t:0.0s
     updateEntry:[O2552] N2=20230201 nSub:old=0/upd=2/new=2
-#4)     --readNextEntry--[ENTRY            O2553   20230202   20230523   20230417       O094] #ln:171 t:0.01s
+#4)     --readNextEntry--[ENTRY            O2553   20230202   20230523   20230417       O094] #ln:171 t:0.0s
     updateEntry:[O2553] N2=20230202 nSub:old=0/upd=7/new=7
-#5)     --readNextEntry--[ENTRY            O2555   20230203   20230523   20230417       O094] #ln:867 t:0.013s
+#5)     --readNextEntry--[ENTRY            O2555   20230203   20230523   20230417       O094] #ln:867 t:0.016s
     updateEntry:[O2555] N2=20230203 nSub:old=0/upd=5/new=5
-#6)     --readNextEntry--[ENTRY            O2556   20230207   20230523   20230417       O094] #ln:143 t:0.018s
+#6)     --readNextEntry--[ENTRY            O2556   20230207   20230523   20230417       O094] #ln:143 t:0.016s
     updateEntry:[O2556] N2=20230207 nSub:old=0/upd=4/new=4
-#7)     --readNextEntry--[ENTRY            O2557   20230216   20230523   20230417       O094] #ln:63 t:0.02s
+#7)     --readNextEntry--[ENTRY            O2557   20230216   20230523   20230417       O094] #ln:63 t:0.016s
     updateEntry:[O2557] N2=20230216 nSub:old=0/upd=2/new=2
-#8)     --readNextEntry--[ENTRY            O2558   20230217   20230523   20230417       O094] #ln:127 t:0.02s
+#8)     --readNextEntry--[ENTRY            O2558   20230217   20230523   20230417       O094] #ln:127 t:0.016s
     updateEntry:[O2558] N2=20230217 nSub:old=0/upd=3/new=3
-#9)     --readNextEntry--[ENTRY            O2559   20230217   20230523   20230417       O094] #ln:1024 t:0.02s
+#9)     --readNextEntry--[ENTRY            O2559   20230217   20230523   20230417       O094] #ln:1024 t:0.016s
     updateEntry:[O2559] N2=20230217 nSub:old=0/upd=2/new=2
-#10)    --readNextEntry--[ENTRY            O2560   20230218   20230523   20230417       O094] #ln:265 t:0.02s
+#10)    --readNextEntry--[ENTRY            O2560   20230218   20230523   20230417       O094] #ln:265 t:0.016s
     updateEntry:[O2560] N2=20230218 nSub:old=0/upd=18/new=18
-#11)    --readNextEntry--[ENTRY            O2561   20230219   20230523   20230417       O094] #ln:1284 t:0.02s
+#11)    --readNextEntry--[ENTRY            O2561   20230219   20230523   20230417       O094] #ln:1284 t:0.016s
     updateEntry:[O2561] N2=20230219 nSub:old=0/upd=72/new=72
-#12)    --readNextEntry--[ENTRY            O2562   20230221   20230523   20230417       O094] #ln:797 t:0.02s
+#12)    --readNextEntry--[ENTRY            O2562   20230221   20230523   20230417       O094] #ln:797 t:0.016s
     updateEntry:[O2562] N2=20230221 nSub:old=0/upd=2/new=2
-#13)    --readNextEntry--[ENTRY            O2563   20230221   20230523   20230417       O094] #ln:578 t:0.03s
+#13)    --readNextEntry--[ENTRY            O2563   20230221   20230523   20230417       O094] #ln:578 t:0.016s
     updateEntry:[O2563] N2=20230221 nSub:old=0/upd=5/new=5
 ---closeInputFile--firstStrFile=[TRANS             O094   20230417                                 O0000  0    0 ]
 ---closeInputFile---lastStrFile=[ENDTRANS            13          0                                 Z999999999999 ]
----applyTransFile::time:0.03sec lnMax:1284
+---applyTransFile::time:0.032sec lnMax:1284
   args[8]=[-h:REQUEST,644,20230523,142148,20230523,3]
         #Option: -h:REQUEST,644,20230523,142148,20230523,3
 0) [REQUEST]
@@ -332,36 +338,25 @@ Java HotSpot(TM) 64-Bit Server VM (build 13.0.2+8, mixed mode, sharing)
 24000/25809: O1386---MasterEntry::#sub:2
 ---outTail::str:[ENDREQUEST       25809]22
 
-===trans2master===time:25.06sec
+===trans2master===time:31.093sec
 + errCode=0
-+ '[' 0 -ne 0 ']'
-+ ls -la EXFOR-2023-05-23.bck EXFOR-2023-05-23.new
--rw-r--r-- 1 zerkinv Administrators 1020975826 May 23 14:25 EXFOR-2023-05-23.bck
--rw-r--r-- 1 zerkinv Administrators 1020975826 Sep  7  2022 EXFOR-2023-05-23.new
-+ unix2dos EXFOR-2023-05-23.new
++ set +x
+-rw-r--r-- 1 zerkin Administrators 1020975826 May 23 14:25 EXFOR-2023-05-23.bck
+-rw-r--r-- 1 zerkin Administrators 1020975826 Sep  7  2022 EXFOR-2023-05-23.new
 unix2dos: converting file EXFOR-2023-05-23.new to DOS format...
-+ ls -la EXFOR-2023-05-23.bck EXFOR-2023-05-23.new
--rw-r--r-- 1 zerkinv Administrators 1020975826 May 23 14:25 EXFOR-2023-05-23.bck
--rw-r--r-- 1 zerkinv Administrators 1020975826 Aug 14 17:37 EXFOR-2023-05-23.new
-+ wc -l EXFOR-2023-05-23.bck EXFOR-2023-05-23.new
+-rw-r--r-- 1 zerkin Administrators 1020975826 May 23 14:25 EXFOR-2023-05-23.bck
+-rw-r--r-- 1 zerkin Administrators 1020975826 Nov  9 14:21 EXFOR-2023-05-23.new
   25559406 EXFOR-2023-05-23.bck
   25559406 EXFOR-2023-05-23.new
   51118812 total
-+ diff EXFOR-2023-05-23.bck EXFOR-2023-05-23.new
 diff: memory exhausted
-+ '[' 2 -ne 0 ']'
-+ test Windows_NT = Windows_NT
-+ echo '--- Run Windows utility FC ---'
 --- Run Windows utility FC ---
-+ FC EXFOR-2023-05-23.bck EXFOR-2023-05-23.new
 Comparing files EXFOR-2023-05-23.bck and EXFOR-2023-05-23.NEW
 FC: no differences encountered
 
-+ echo '--- FC finished ---'
 --- FC finished ---
-+ set +x
 Different lines: 0 dif2.txt
-Script [test2.sh] stop. 2023-08-14,17:38:01
-Elapsed time: 59sec
+Script [test2.sh] stop. 2023-11-09,14:22:19
+Elapsed time: 70sec
 
-C:\zerkin\x4master\x4NextMaster2win>
+C:\projects\zerkin\x4NextMaster2>

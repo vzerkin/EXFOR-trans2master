@@ -28,8 +28,8 @@ chkFiles EXFOR-2023-04-29.bck trans.c222 EXFOR-2023-05-15.bck
 t00=`date +%s`
 set -x
 
-#java -Xmx4000M -cp x4master.jar trans2master \
-java -cp x4master.jar trans2master \
+#java -cp x4master.jar trans2master \
+java -Xmx4000M -cp x4master.jar trans2master \
  -i:EXFOR-2023-04-29.bck \
  -n3set:20230515 -t:trans.c222 \
  -h:REQUEST,1001,20230515,172831,20230515,3 \
